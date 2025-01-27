@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="formstyle.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .hh{
+            color: aqua;
+            background-color: black;
+        }
+        #head1{
+            color: blueviolet;
+            background-color: blanchedalmond;
+        }
+        body{
+            color:aqua;
+
+            text-align: center;
+            background-color: rgb(100, 100, 100);
+        }
+        
+
+    </style>
+    
+</head>
+<body>
+    <h1 id="head1">
+        this is heading 1
+    </h1>
+    <h1 id="head1">
+        <h2 id="head2">
+        this is heading 2
+    </h2>
+    <h3 class="hh" id="head3">This is heading 3</h3>
+    <h4 class="hh">this heading 4</h4>
+    <form action="" method="post">
+        <div class="form1">
+        <label for="uname">
+            Name:
+            <input type="text" style="box-shadow: 10px 20px inset white;" name="name" id="uname" placeholder="name" required style="border-radius: 10px;">
+        </label>
+        <br>
+
+        <label for="email" >email:  
+            <input type="email" name="email" id="email" placeholder="email" style="border-radius: 10px;" required>
+        </label>
+        <br>
+        <label for="password">password:
+            <input type="password" name="password" id="password" placeholder="password" style="border-radius: 10px;" minlength="8"  required>
+
+
+<input type="submit" value="submit form" style="border-radius: 20px;"><br>
+<input type="reset">
+<label for="review">write a review<br><textarea rows="20" cols="40" name="review" id="review" > this is a nice app</textarea></label>
+
+
+<br>
+<label for="hobby">hobby<br>
+    <input type="checkbox" value="playing sports" name="hob" id="hobby">playing sports<br>
+    <input type="checkbox" value="chess" name="hob" id="hobby">chess<br>
+    <input type="checkbox" value="singing" name="hob" id="hobby">singing<br>
+    <input type="checkbox" value="dance" name="hob" id="hobby" >dance<br>
+<br>
+<br>
+
+</label>
+<label for="program">
+    <input type="radio" name="program" id="btech">
+    <label for="btech">B.Tech<br></label>
+
+    <input type="radio" name="program" id="bca">
+    <label for="bca">BCA</label><br>
+
+    <input type="radio" name="program" id="b_ed">
+    <label for="b_ed">B.Ed</label>
+
+</label>
+
+<br>
+<label for="statesel">Choose your state
+    <select name="statesel" id="statesel"  size="3">
+        <option value="Choose your state">Choose your state</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Haryana">Haryana</option>
+    </select>
+
+</label>
+<br>
+
+<br><label for="file">choose your file
+    <input type="file">
+</label>
+
+<input type="image" name="image" src="images\img2.jpg" height="40px" width="100px" style="border-radius: 20px;" value="submit"
+></div>
+    </form>
+    
+</body>
+</html>

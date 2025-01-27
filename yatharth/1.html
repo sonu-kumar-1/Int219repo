@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>body {
+        background-color: #f4f4f4; 
+        font-family: Arial, sans-serif; 
+        margin: 20px; 
+    }
+    
+    h2 {
+        color: #333; 
+    }
+    
+    form {
+        background: white; 
+        padding: 20px; 
+        border-radius: 5px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    
+    label {
+        display: block; 
+        margin: 10px 0 5px; 
+    }
+    
+    input, select, textarea {
+        width: 100%; 
+        padding: 10px; 
+        margin-bottom: 15px;
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+    }
+    
+    button {
+        background-color: #5cb85c; 
+        color: white; 
+        border: none; 
+        padding: 10px 15px; 
+        border-radius: 4px; 
+        cursor: pointer; 
+    
+    button:hover {
+        background-color: #4cae4c; 
+    }</style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="/submit_form" method="POST">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+       
+        <label for="bloodGroup">Blood Group:</label>
+        <input type="text" id="bloodGroup" name="bloodGroup" required><br><br>
+
+       
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        
+        <label for="course">Course Type:</label>
+        <select id="course" name="course" required>
+            <option value="bachelor">Bachelor's</option>
+            <option value="master">Master's</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificate">Certificate</option>
+        </select><br><br>
+
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+       
+        <label for="payment">Payment Details:</label>
+        <input type="text" id="payment" name="payment" required><br><br>
+
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box_model</title>
+
+    <style>
+        /* div{
+            margin:auto;
+            text-align: center; 
+            
+            width: 300px; 
+            height: 100px;
+            padding:40px 50px 100px;
+            box-shadow:inset 5px 5px grey ;       
+            border:4px black double;
+            border-radius: 10px;
+            color: black;
+            background-color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+        }*/
+
+
+        .container{
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2px;
+            grid-auto-rows: minmax(100px, auto);
+            margin: 20px;
+            border: 2px double black;
+            
+
+        }
+        .item{
+            background-color: rgb(104, 246, 251);
+            border: 2px double black;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            box-shadow: inset 5px 5px 4px rgb(145, 202, 199);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+          
+
+        }
+        .item:hover{
+            animation: expand 0.5ms ease-in;
+            
+        }
+
+
+        @keyframes expand{
+            0% {transform: scale(1);}
+            100% {transform: scale(1.1);}
+            
+        }  
+
+       
+        
+
+        
+
+        
+
+
+
+    </style>
+</head>
+<body>
+   
+
+    <div class="container"> 
+        
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+        <div class="item">item9</div>
+        
+        
+    </div>
+</body>
+</html>
